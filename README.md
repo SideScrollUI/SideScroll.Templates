@@ -73,7 +73,3 @@ dotnet new sidescroll.app -o MyApp
 ```bash
 dotnet new uninstall SideScroll.Templates
 ```
-
----
-
-Let me know if you want to add versioning, CI build instructions, or publish-to-NuGet steps.
