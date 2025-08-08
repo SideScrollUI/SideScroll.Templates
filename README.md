@@ -1,12 +1,12 @@
 # SideScroll .NET Templates
 
-This repository contains the official `.NET` project templates for building new [SideScroll](https://github.com/SideScrollUI/SideScroll) applications.
+This repository contains the `.NET` project templates for building new [SideScroll](https://github.com/SideScrollUI/SideScroll) applications
 
-> 📦 For information about the SideScroll framework itself, visit the [main repo](https://github.com/SideScrollUI/SideScroll).
+> 📦 For information about the SideScroll framework itself, visit the [main repo](https://github.com/SideScrollUI/SideScroll)
 
 ---
 
-## 🚀 Installation
+## 🚀 Installing
 
 To install the templates:
 
@@ -14,13 +14,13 @@ To install the templates:
 dotnet new install SideScroll.Templates
 ```
 
-After installation, you can list available templates:
+After installing, you can list the available templates:
 
 ```bash
-dotnet new list
+dotnet new list SideScroll
 ```
 
-Expected output:
+You should see something like this:
 
 ```
 Template Name         Short Name      Language  Tags
@@ -54,7 +54,7 @@ dotnet build SideScroll.Templates.csproj
 dotnet new install <path-to-SideScroll.Templates>
 ```
 
-### Reinstall (Force Refresh)
+### Reinstalling
 
 ```bash
 dotnet new install <path-to-SideScroll.Templates> --force
@@ -64,6 +64,13 @@ dotnet new install <path-to-SideScroll.Templates> --force
 
 ```bash
 dotnet new sidescroll.app -o MyApp
+```
+
+### Run the project
+
+```bash
+cd MyApp
+dotnet run
 ```
 
 ---
