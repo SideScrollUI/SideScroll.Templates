@@ -21,7 +21,7 @@ public class TabSample : ITab
                 new("Demo", new TabSampleDemo()),
                 new("Samples", new TabSamples()),
 				new("Links", new TabLinks()),
-				new("Settings", new TabAvaloniaSettings<CustomUserSettings>()),
+				new("Settings", new TabAvaloniaSettings<SideScrollAppTemplateUserSettings>()),
             };
         }
     }

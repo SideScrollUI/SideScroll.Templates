@@ -26,7 +26,7 @@ class Program
 		}
 		catch (Exception e)
 		{
-			var settings = MainWindow.Settings;
+			var settings = AppSettings.ProjectSettings;
 			LogUtils.Save(settings.ExceptionsPath, settings.Name!, e);
 			return 1;
 		}
