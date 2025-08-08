@@ -1,14 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageType>Template</PackageType>
     <PackageVersion>0.9.9</PackageVersion>
-    <PackageId>SideScroll.Templates</PackageId>
+    <PackageReleaseNotes>Initial templates for SideScroll apps</PackageReleaseNotes>
+
     <Title>SideScroll Templates</Title>
-    <Description>Templates for creating SideScroll applications and libraries.</Description>
+    <Description>Templates for creating SideScroll applications and libraries</Description>
+    <RepositoryUrl>https://github.com/SideScrollUI/SideScroll.Templates</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Authors>SideScroll UI</Authors>
+    <Copyright>SideScroll UI</Copyright>
+
+    <PackageId>SideScroll.Templates</PackageId>
+    <PackageType>Template</PackageType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/SideScrollUI/SideScroll.Templates</PackageProjectUrl>
     <PackageTags>dotnet-new;templates;sidescroll;avalonia</PackageTags>
-    <PackageProjectUrl>https://github.com/SideScrollUI/SideScrollTemplates</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/SideScrollUI/SideScrollTemplates.git</RepositoryUrl>
+    <PackageIcon>SideScroll_128.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <TargetFramework>net8.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
@@ -20,6 +30,17 @@
   <ItemGroup>
     <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
     <Compile Remove="**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Images\Logo\png\SideScroll_128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
