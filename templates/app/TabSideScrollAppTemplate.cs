@@ -1,3 +1,4 @@
+using SideScrollAppTemplate.Examples;
 using SideScroll;
 using SideScroll.Avalonia.Tabs;
 using SideScroll.Tabs;
@@ -8,7 +9,7 @@ using SideScroll.Tabs.Samples.Demo;
 
 namespace SideScrollAppTemplate;
 
-public class TabSample : ITab
+public class TabSideScrollAppTemplate : ITab
 {
     public TabInstance Create() => new Instance();
 
@@ -20,6 +21,7 @@ public class TabSample : ITab
             {
                 new("Demo", new TabSampleDemo()),
                 new("Samples", new TabSamples()),
+				new("Examples", new TabExamples()),
 				new("Links", new TabLinks()),
 				new("Settings", new TabAvaloniaSettings<SideScrollAppTemplateUserSettings>()),
             };

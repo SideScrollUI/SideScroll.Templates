@@ -10,7 +10,7 @@ public partial class MainWindow : BaseWindow
 {
 	public MainWindow() : base(Project.Load<SideScrollAppTemplateUserSettings>(AppSettings.ProjectSettings))
 	{
-		AddTab(new TabSample());
+		AddTab(new TabSideScrollAppTemplate());
 
 		LiveChartCreator.Register();
 		ScreenCapture.AddControlTo(TabViewer);
