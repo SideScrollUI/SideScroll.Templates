@@ -36,7 +36,7 @@ public class TabTodos : ITab
 
 		private DataRepoView<TodoItem>? _dataRepoView;
 		private TodoItem? _todoItem;
-		private TabControlParams? _todoParams;
+		private TabForm? _todoForm;
 
 		private TodoItem[] _samples =
 		[
@@ -70,8 +70,8 @@ public class TabTodos : ITab
 			model.MaxDesiredWidth = 850;
 
 			_todoItem = new();
-			_todoParams = new(_todoItem);
-			model.AddObject(_todoParams);
+			_todoForm = new(_todoItem);
+			model.AddObject(_todoForm);
 
 			Toolbar toolbar = new();
 			toolbar.ButtonReset.Action = Reset;
@@ -116,7 +116,7 @@ public class TabTodos : ITab
 		{
 			_todoItem = new();
 			_todoItem.Id = _dataRepoView!.Items.Count + 1;
-			_todoParams!.LoadObject(_todoItem);
+			_todoForm!.LoadObject(_todoItem);
 		}
 
 		private void Save(Call call)

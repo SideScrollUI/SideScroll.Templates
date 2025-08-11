@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SideScrollAppTemplate.Examples.Todo;
 
-[Params, PublicData]
+[PublicData]
 public class TodoItem
 {
 	[HiddenRow]

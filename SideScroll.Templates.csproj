@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageVersion>0.9.9</PackageVersion>
-    <PackageReleaseNotes>Initial templates for SideScroll apps</PackageReleaseNotes>
+    <PackageVersion>0.9.10</PackageVersion>
+    <PackageReleaseNotes>Added Example Process Monitor Tab</PackageReleaseNotes>
 
     <Title>SideScroll Templates</Title>
     <Description>Templates for creating SideScroll applications and libraries</Description>

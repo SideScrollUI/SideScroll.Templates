@@ -1,5 +1,4 @@
-﻿using Avalonia;
-using Avalonia.Data.Core.Plugins;
+using Avalonia;
 using SideScroll.Utilities;
 
 namespace SideScrollAppTemplate;
@@ -13,12 +12,6 @@ class Program
 	public static int Main(string[] args)
 	{
 		AppBuilder builder = BuildAvaloniaApp();
-
-		// Remove Default DataAnnotations Validators
-		// These validators show before values are entered, which ends up showing too many initial warnings
-		// https://docs.avaloniaui.net/docs/data-binding/data-validation
-		// Add custom template?
-		BindingPlugins.DataValidators.RemoveAt(0);
 
 		try
 		{

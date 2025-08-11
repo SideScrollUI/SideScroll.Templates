@@ -16,7 +16,8 @@ public class TabExamples : ITab
             model.Items = new List<ListItem>()
             {
                 new("Todo", new TabTodos()),
-            };
+				new("Process Monitor", new TabProcessMonitor()),
+			};
         }
     }
 }
