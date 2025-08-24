@@ -3,11 +3,11 @@
   "author": "SideScrollUI",
   "classifications": [ "Desktop", "Xaml", "SideScroll", "Avalonia", "Windows", "Linux", "macOS" ],
   "description": "A cross-platform SideScroll Avalonia UI Application targeting Desktop",
-  "groupidentity": "SideScroll.App",
-  "identity": "SideScroll.App",
-  "name": "SideScroll .NET App",
+  "groupidentity": "SideScroll.Sln",
+  "identity": "SideScroll.Sln",
+  "name": "SideScroll .NET Solution",
   "preferNameDirectory": true,
-  "shortName": "sidescroll.app",
+  "shortName": "sidescroll.sln",
   "sourceName": "SideScrollAppTemplate",
   "defaultName": "SideScrollApplication",
   "tags": {
@@ -65,14 +65,14 @@
     }
   },
   "primaryOutputs": [
-    { "path": "SideScrollAppTemplate.csproj" },
+    { "path": "SideScrollAppTemplate.sln" },
     {
       "condition": "(HostIdentifier != \"dotnetcli\" && HostIdentifier != \"dotnetcli-preview\")",
-      "path": "App.axaml"
+      "path": "Libraries\\SideScrollAppTemplate\\MainWindow.cs"
     },
     {
       "condition": "(HostIdentifier != \"dotnetcli\" && HostIdentifier != \"dotnetcli-preview\")",
-      "path": "MainWindow.cs"
+      "path": "Libraries\\SideScrollAppTemplate\\TabSideScrollAppTemplate.cs"
     }
   ],
   "postActions": [

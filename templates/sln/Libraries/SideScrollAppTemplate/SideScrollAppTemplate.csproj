@@ -1,10 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>0.1</Version>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>FrameworkParameter</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
@@ -14,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia.Desktop" Version="AvaloniaVersionTemplateParameter" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="AvaloniaVersionTemplateParameter" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="AvaloniaVersionTemplateParameter" />
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->

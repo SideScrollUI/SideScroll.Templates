@@ -38,6 +38,12 @@ To create a new SideScroll app from the template:
 dotnet new sidescroll.app -o MyApp
 ```
 
+If you want to create a new Solution with the app split into a Library and Program app:
+
+```bash
+dotnet new sidescroll.sln -o MyApp
+```
+
 ---
 
 ## 🧱 Developing the Templates
