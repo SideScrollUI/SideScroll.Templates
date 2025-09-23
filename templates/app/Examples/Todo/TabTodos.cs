@@ -37,7 +37,7 @@ public class TabTodos : ITab
 		private TodoItem? _todoItem;
 		private TabForm? _todoForm;
 
-		private TodoItem[] _samples =
+		private readonly TodoItem[] _samples =
 		[
 			new()
 			{
@@ -113,8 +113,10 @@ public class TabTodos : ITab
 
 		private void New(Call call)
 		{
-			_todoItem = new();
-			_todoItem.Id = _dataRepoView!.Items.Count + 1;
+			_todoItem = new()
+			{
+				Id = _dataRepoView!.Items.Count + 1
+			};
 			_todoForm!.LoadObject(_todoItem);
 		}
 
@@ -122,7 +124,7 @@ public class TabTodos : ITab
 		{
 			Validate();
 
-			var clone = _todoItem.DeepClone()!;
+			var clone = _todoItem!.DeepClone();
 
 			_dataRepoView!.Save(call, clone);
 		}
