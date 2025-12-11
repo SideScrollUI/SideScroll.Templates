@@ -13,7 +13,7 @@ public class TabSideScrollAppTemplate : ITab
 {
     public TabInstance Create() => new Instance();
 
-    public class Instance : TabInstance
+    private class Instance : TabInstance
     {
         public override void Load(Call call, TabModel model)
         {

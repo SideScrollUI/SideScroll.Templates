@@ -6,7 +6,7 @@ using SideScroll.Avalonia.ScreenCapture;
 
 namespace SideScrollAppTemplate;
 
-public partial class MainWindow : BaseWindow
+public class MainWindow : BaseWindow
 {
 	public MainWindow() : base(Project.Load<SideScrollAppTemplateUserSettings>(AppSettings.ProjectSettings))
 	{
@@ -14,7 +14,7 @@ public partial class MainWindow : BaseWindow
 
 		LiveChartCreator.Register();
 		ScreenCapture.AddControlTo(TabViewer);
-		TabViewer.Toolbar?.AddVersion();
+		TabViewer.Toolbar?.AddRightControls();
 
 		Icon = new WindowIcon(Assets.Icons.SideScroll.Stream);
 	}

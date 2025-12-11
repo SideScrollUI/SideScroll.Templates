@@ -43,7 +43,7 @@
       "description": "The target version of SideScroll NuGet packages.",
       "datatype": "text",
       "replaces": "SideScrollVersionTemplateParameter",
-      "defaultValue": "0.13"
+      "defaultValue": "0.14"
     },
     "AvaloniaVersion": {
       "type": "parameter",
