@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using SideScroll.Tabs;
 using SideScroll.Avalonia.Charts.LiveCharts;
 using SideScroll.Avalonia.Controls;
-using SideScroll.Avalonia.ScreenCapture;
+using SideScroll.Avalonia.Controls.ScreenCapture;
 
 namespace SideScrollAppTemplate;
 

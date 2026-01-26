@@ -19,7 +19,6 @@
 
     <PackageReference Include="SideScroll.Avalonia" Version="SideScrollVersionTemplateParameter" />
     <PackageReference Include="SideScroll.Avalonia.Charts.LiveCharts" Version="SideScrollVersionTemplateParameter" />
-    <PackageReference Include="SideScroll.Avalonia.ScreenCapture" Version="SideScrollVersionTemplateParameter" />
     <PackageReference Include="SideScroll.Tabs.Samples" Version="SideScrollVersionTemplateParameter" />
   </ItemGroup>
 </Project>
