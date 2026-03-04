@@ -2,9 +2,9 @@
   <PropertyGroup>
     <Version>0.1</Version>
 
-    <SideScrollVersion>0.15</SideScrollVersion>
-    <AvaloniaVersion>11.3.11</AvaloniaVersion>
-    <AvaloniaEditVersion>11.3.0</AvaloniaEditVersion>
+    <SideScrollVersion>0.16</SideScrollVersion>
+    <AvaloniaVersion>11.3.12</AvaloniaVersion>
+    <AvaloniaEditVersion>11.4.1</AvaloniaEditVersion>
 
     <TargetFramework>FrameworkParameter</TargetFramework>
     <Configurations>Debug;Release;DebugX86</Configurations>
