@@ -1,8 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageVersion>0.16</PackageVersion>
-    <PackageReleaseNotes>Added Custom Titlebar Support</PackageReleaseNotes>
+    <PackageVersion>0.17</PackageVersion>
+    <PackageReleaseNotes>
+    - https://github.com/SideScrollUI/SideScroll.Templates/releases
+    </PackageReleaseNotes>
 
     <Title>SideScroll Templates</Title>
     <Description>Templates for creating SideScroll applications and libraries</Description>
