@@ -23,10 +23,11 @@ dotnet new list SideScroll
 You should see something like this:
 
 ```
-Template Name         Short Name      Language  Tags
--------------------  --------------  --------  ---------------------------------------------
-SideScroll .NET App       sidescroll.app  [C#]      Desktop/Xaml/SideScroll/Avalonia/Windows/Linux/macOS
-SideScroll .NET Solution  sidescroll.sln  [C#]      Desktop/Xaml/SideScroll/Avalonia/Windows/Linux/macOS
+Template Name                Short Name          Language  Tags
+---------------------------  ------------------  --------  ----------------------------------------------------
+SideScroll .NET App          sidescroll.app      [C#]      Desktop/Xaml/SideScroll/Avalonia/Windows/Linux/macOS
+SideScroll .NET Browser App  sidescroll.browser  [C#]      Browser/WebAssembly/Xaml/SideScroll/Avalonia
+SideScroll .NET Solution     sidescroll.sln      [C#]      Desktop/Xaml/SideScroll/Avalonia/Windows/Linux/macOS
 ```
 
 ---

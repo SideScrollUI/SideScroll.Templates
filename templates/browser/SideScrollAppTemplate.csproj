@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.WebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-browser</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PublishTrimmed>false</PublishTrimmed>
+    <IsPackable>false</IsPackable>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <JsonSerializerIsReflectionEnabledByDefault>true</JsonSerializerIsReflectionEnabledByDefault>
+    <!-- Enable IDBFS for persistent storage -->
+    <WasmBuildNative>true</WasmBuildNative>
+    <EmccExtraArgs>-lidbfs.js</EmccExtraArgs>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Browser" Version="AvaloniaVersionTemplateParameter" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="AvaloniaVersionTemplateParameter" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="AvaloniaVersionTemplateParameter" />
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Include="Avalonia.Diagnostics" Version="AvaloniaVersionTemplateParameter">
+      <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+      <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.JSInterop" Version="8.0.0" />
+    <PackageReference Include="SideScroll.Avalonia" Version="SideScrollVersionTemplateParameter" />
+    <PackageReference Include="SideScroll.Avalonia.Charts.LiveCharts" Version="SideScrollVersionTemplateParameter" />
+    <PackageReference Include="SideScroll.Serialize.Browser" Version="SideScrollVersionTemplateParameter" />
+    <PackageReference Include="SideScroll.Tabs.Samples" Version="SideScrollVersionTemplateParameter" />
+  </ItemGroup>
+
+</Project>
