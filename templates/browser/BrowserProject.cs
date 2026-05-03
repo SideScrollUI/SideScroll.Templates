@@ -21,8 +21,8 @@ public class BrowserProject(ProjectSettings projectSettings, UserSettings userSe
 	/// </summary>
 	public static BrowserProject Load()
 	{
-		var projectSettings = AppSettings.ProjectSettings;
-		var defaultUserSettings = new SideScrollAppTemplateUserSettings();
+		var projectSettings = SideScrollAppTemplateProjectSettings.Default;
+		var defaultUserSettings = projectSettings.DefaultUserSettings;
 
 		// Create a temporary project to access Data.App for loading previously saved UserSettings
 		var tempProject = new BrowserProject(projectSettings, defaultUserSettings);

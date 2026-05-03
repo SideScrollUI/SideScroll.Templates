@@ -3,13 +3,23 @@ using SideScroll.Tabs.Settings;
 
 namespace SideScrollAppTemplate;
 
-public static class AppSettings
+public class SideScrollAppTemplateProjectSettings : ProjectSettings
 {
-	public static ProjectSettings ProjectSettings => new()
+	public override SideScrollAppTemplateUserSettings DefaultUserSettings => new()
+	{
+		EnableCustomTitleBar = DefaultEnableCustomTitlebar,
+		DataSettings = new()
+		{
+			AppDataPath = DefaultAppDataPath,
+			LocalDataPath = DefaultLocalDataPath,
+		},
+	};
+
+	public static SideScrollAppTemplateProjectSettings Default => new()
 	{
 		Name = "SideScrollAppTemplate",
 		LinkType = "SideScrollAppTemplate",
-		Version = ProjectSettings.ProgramVersion(),
+		Version = ProgramVersion(),
 		DataVersion = new Version(0, 1),
 	};
 }

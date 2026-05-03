@@ -19,7 +19,7 @@ internal static class Program
 		}
 		catch (Exception e)
 		{
-			var settings = AppSettings.ProjectSettings;
+			var settings = SideScrollAppTemplateProjectSettings.Default;
 			LogUtils.Save(settings.ExceptionsPath, settings.Name!, e);
 			return 1;
 		}

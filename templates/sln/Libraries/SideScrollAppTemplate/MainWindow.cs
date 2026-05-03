@@ -8,14 +8,14 @@ namespace SideScrollAppTemplate;
 
 public class MainWindow : BaseWindow
 {
-	public MainWindow() : base(Project.Load<SideScrollAppTemplateUserSettings>(AppSettings.ProjectSettings))
+	public MainWindow() : base(Project.Load<SideScrollAppTemplateUserSettings>(SideScrollAppTemplateProjectSettings.Default))
 	{
-		LoadTab(new TabSideScrollAppTemplate());
+		Icon = new WindowIcon(Assets.Icons.SideScroll.Stream);
 
 		LiveChartCreator.Register();
 		ScreenCapture.AddControlTo(TabViewer);
 		TabViewer.Toolbar?.AddRightControls();
-
-		Icon = new WindowIcon(Assets.Icons.SideScroll.Stream);
+		
+		LoadTab(new TabSideScrollAppTemplate());
 	}
 }

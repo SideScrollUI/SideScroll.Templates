@@ -18,8 +18,9 @@ public class BrowserMainView : BaseView
 		// Hook up console logging for all AppLog messages
 		_logWriter = new LogWriterConsole(AppLog);
 
-		LoadTab(new TabSideScrollAppTemplate());
 		LiveChartCreator.Register();
 		TabViewer.Toolbar?.AddRightControls();
+		
+		LoadTab(new TabSideScrollAppTemplate());
 	}
 }
