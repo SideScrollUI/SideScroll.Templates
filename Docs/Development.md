@@ -64,16 +64,16 @@ The [Publish to NuGet](../.github/workflows/publish-nuget.yml) workflow builds, 
 
 Before publishing, it installs the packed package and creates and builds a project from each template, since a template package packs successfully whether or not the templates inside it work. The generated projects resolve `SideScrollVersion` and `AvaloniaVersion` from nuget.org, so the SideScroll release the templates target has to be published first.
 
-Run it from the Actions tab, selecting the tag to release from the ref dropdown:
+Releasing is a version bump:
 
-- Update `<PackageVersion>` in [SideScroll.Templates.csproj](../SideScroll.Templates.csproj) and commit it
-- `git tag v0.24`
-- `git push origin v0.24`
-- Run the workflow against `v0.24` with **Push the package to nuget.org** checked
+- Update `<PackageVersion>` in [SideScroll.Templates.csproj](../SideScroll.Templates.csproj), along with the `SideScrollVersion` defaults in each template
+- Commit and push to `main`
 
-Leaving that box unchecked packs the package and uploads it as a build artifact without publishing, which is a way to verify a release before committing to it. The tag has to match `<PackageVersion>` or the workflow fails before publishing anything.
+A `v<version>` tag is the record of what's been released, so a version without one is a new release. The workflow publishes it and then tags the commit it published, which keeps later pushes from publishing the same version twice. Pushes made while the current version is already tagged stop after the version check, without building.
 
-The automatic `v*` tag trigger is commented out in the workflow until a manual run has verified the setup end to end.
+The first push to `main` after the bump is what releases, whether or not that push is the bump commit itself.
+
+Running the workflow manually from the Actions tab builds, packs, and runs the template checks without publishing, uploading the package as a build artifact to check before committing to a release. Checking **Push the package to nuget.org** publishes from a manual run, which is also how to retry a release that failed partway through.
 
 ### Setup
 
@@ -88,6 +88,6 @@ On nuget.org, under your username → **Trusted Publishing**, add a policy:
 | Workflow File | `publish-nuget.yml` |
 | Environment | *(leave empty)* |
 
-Then add a `NUGET_USER` repository secret (Settings → Secrets and variables → Actions) holding the nuget.org profile name that owns the policy — not the account's email address.
+The workflow passes the `sidescrollui` profile name to `NuGet/login`, which has to match the policy's package owner.
 
 Renaming the workflow file breaks the policy, since it's matched by file name.

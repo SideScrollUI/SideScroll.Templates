@@ -2,8 +2,8 @@
   <PropertyGroup>
     <Version>0.1</Version>
 
-    <SideScrollVersion>0.24</SideScrollVersion>
-    <AvaloniaVersion>11.3.18</AvaloniaVersion>
+    <SideScrollVersion>SideScrollVersionTemplateParameter</SideScrollVersion>
+    <AvaloniaVersion>AvaloniaVersionTemplateParameter</AvaloniaVersion>
     <AvaloniaEditVersion>11.4.1</AvaloniaEditVersion>
 
     <TargetFramework>FrameworkParameter</TargetFramework>
