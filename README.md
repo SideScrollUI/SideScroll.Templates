@@ -1,5 +1,10 @@
 # SideScroll .NET Templates
 
+[![NuGet](https://img.shields.io/nuget/v/SideScroll.Templates.svg)](https://www.nuget.org/packages/SideScroll.Templates)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/SideScrollUI/SideScroll.Templates/blob/main/LICENSE)
+[![.NET](https://img.shields.io/badge/.NET-8.0-purple.svg)](https://dotnet.microsoft.com/download)
+[![Avalonia](https://img.shields.io/badge/Avalonia-11.3-blue.svg)](https://github.com/AvaloniaUI/Avalonia)
+
 This repository contains the `.NET` project templates for building new [SideScroll](https://github.com/SideScrollUI/SideScroll) applications
 
 > 📦 For information about the SideScroll framework itself, visit the [main repo](https://github.com/SideScrollUI/SideScroll)
