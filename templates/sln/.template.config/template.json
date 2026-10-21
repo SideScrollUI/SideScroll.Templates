@@ -21,16 +21,12 @@
       "datatype": "choice",
       "choices": [
         {
-          "choice": "net8.0",
-          "description": "Target net8.0"
-        },
-        {
-          "choice": "net9.0",
-          "description": "Target net9.0"
+          "choice": "net10.0",
+          "description": "Target net10.0"
         }
       ],
       "replaces": "FrameworkParameter",
-      "defaultValue": "net8.0"
+      "defaultValue": "net10.0"
     },
     "skipRestore": {
       "type": "parameter",
@@ -43,7 +39,7 @@
       "description": "The target version of SideScroll NuGet packages.",
       "datatype": "text",
       "replaces": "SideScrollVersionTemplateParameter",
-      "defaultValue": "0.25"
+      "defaultValue": "0.26"
     },
     "AvaloniaVersion": {
       "type": "parameter",
